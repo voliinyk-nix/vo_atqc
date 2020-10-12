@@ -1,5 +1,4 @@
 # use conditions "if" and  "case"
-
 # Create 4 boolean variables(true,true,false,false) and compare them between themselves - result print in console.
 
 boolean_true_1 = True
@@ -51,13 +50,19 @@ else:
     print("10 < 100")
 
 
-# Create 2 different strings. Compare them with usage  if ??? trinar operator and print "Not equal", "Equal" and explain
+# Create 2 different strings. Compare them with usage  if trinar (??? ternary ) operator and print "Not equal", "Equal" and explain
 var_string_1 = "one simple string"
 var_string_2 = "Another one simple string!"
-
-if (var_string_1 == var_string_2):
-    print("Equal")
-else:
-    print("Not equal")
+print("Equal" if var_string_1 == var_string_2 else "Not equal")
 
 # Explain difference betweeb &,|,&&,|| and provide example.
+print("Equal" if var_string_1 == var_string_2 and var_string_2 > var_string_1 else "Not equal")
+print("Equal" if var_string_1 == var_string_2 or var_string_2 > var_string_1 else "Not equal")
+
+# Create 2 string variables with same value but initialize one with literal and another with constructor.
+# (String a ="lalala"; String b = new String("lalala");)
+# Compare this values with usage of == and equal. Explain result
+a = "lalala"
+b = str("lalala")
+if(a == b):
+    print('a is equal to b')
