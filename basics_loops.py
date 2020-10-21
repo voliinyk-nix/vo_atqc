@@ -20,6 +20,7 @@ while inf_loop < 1:
 def print_row():
     print("Print the row")
 
+
 print_row()
 print("Exit")
 
@@ -29,4 +30,6 @@ def no_exit():
     print("No exit condition")
     no_exit()
 
+
 no_exit()
+# RecursionError: maximum recursion depth exceeded while calling a Python object
